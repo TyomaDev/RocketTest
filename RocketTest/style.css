@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;    color: #364844;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    
+}
+label{
+    margin-top: 10px;
+}
+ul{
+    margin: 15px 0;
+}
+li{
+    color: #1FA181;
+    margin: 10px 0;
+    margin-left: 17px;
+}
+h1{
+    font-weight: 700;
+    font-size: 36px;
+    margin: 14px 0;
+}
+h2{
+    line-height: 24px;
+}
+h3{
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #364844;
+}
+h4{
+    font-size: 22px;
+    line-height: 28px;
+    color: #364844
+}
+#newCost{
+    font-size: 22px;
+    line-height: 28px;
+    color: #364844
+}
+h6{
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.span1{
+    color: #868686;
+    text-decoration: line-through;
+}
+.span2{
+    color: #E1E1E1;
+}
+/* burger */
+.burger{
+    cursor: pointer;
+}
+.noneBurger{
+    display: none !important;
+}
+/* menu */
+#menu{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    background: rgba(69, 146, 127, 0.9);
+    height: 100vh;
+    padding: 13% 10%;
+    justify-content: left;
+    
+}
+#menu>*{
+    margin: 10px 0;
+    color: #fff;
+    font-size: 18px;
+}
+#menu>button{
+        margin-top: 20px;
+        padding: 11px 23px;
+        color:#1FA181;
+        border: 1px solid #0DBC91;
+        background: #F6F6F6;
+        border-radius: 50px;
+        transition: 0.5s;
+        cursor: pointer;
+        width: 70%;
+        font-size: 18px;
+}
+#menu>button:hover{
+    color: #fff;
+    border: 1px solid #08664F;
+    background: #08664F;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* navbar */
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+nav>:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20%;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #fff;
+}
+.nav_left{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 48%;
+   justify-content: left;
+}
+.nav_left>div{
+    margin-left: 2.5rem;
+}
+.nav_left>div>h5{
+    font-size: 14px;
+    color: #364844;
+    margin-left: -20px;
+}
+.nav_left>div>h6{
+    font-size: 14px;
+    color: #868686;
+}
+
+
+.nav_right{
+    justify-content: right;
+    display: flex;
+    align-items: center;
+    width: 52%;
+}
+.nav_right>h6{
+    margin: 0 35px 0 15px;
+
+}
+.nav_right>button{
+    padding: 11px 23px;
+    color:#fff;
+    border: 1px solid #0DBC91;
+    background: #0DBC91;
+    border-radius: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.nav_right>button:hover{
+    color: #0DBC91;
+    border: 1px solid #0DBC91;
+    background: #ffffff00;
+    transition: 0.5s;
+    cursor: pointer;
+}
+/* Нижняя часть Navbar */
+nav>:nth-child(2){
+    padding: 20px 20%; 
+    background: #1FA181;
+    width: 100%;
+
+}
+
+nav>:nth-child(2)>a{
+    color: #fff;
+    margin-right: 30px;
+    transition: 0.5s;
+}
+nav>:nth-child(2)>a:hover{
+    color: #08664F;
+    transition: 0.5s;
+}
+
+/* Первый блок */
+.infoBlock{
+    margin-top: 140px;
+    background: #F8FBFA;
+    display: flex;
+    width: 100%;
+
+}
+.infoBlock_left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 20%;
+}
+.infoBlock_left>div{
+    width: 370px;
+}
+.infoBlock_right{
+    width: 50%;
+}
+.infoBlock_right>img{
+    width: 100%;
+
+}
+
+/* Второй блок */
+
+.offersList{
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    padding: 100px 20%;
+}
+
+.offersList_card{
+    display: flex;
+    justify-content: center;
+
+}
+.offersList_pagination{
+    justify-content: center;
+    display: flex;
+    margin-top: 40px;
+}
+.offersList_pagination>form>img{
+    cursor: pointer;
+}
+.offersList_pagination>p{
+    margin: 0px 30px;
+}
+.offersList_card>div>div{
+    display: flex;
+}
+
+.btn1{
+    padding: 11px 60px;
+    margin-right: 12px;
+    color:#fff;
+    border: 1px solid #0DBC91;
+    background: #0DBC91;
+    border-radius: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.btn1:hover{
+    color: #fff;
+    border: 1px solid #08664F;
+    background: #08664F;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.btn2{
+    padding: 11px 60px;
+    color:#0DBC91;
+    border: 1px solid #0DBC91;
+    background: #ffffff00;
+    border-radius: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.btn2:hover{
+    color: #fff;
+    border: 1px solid #08664F;
+    background: #08664F;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.offersList_card_Info{
+    background-color: #E2F0EF;
+    width: 620px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 60px;
+}
+.offersList_cost{
+    margin: 20px 0;
+}
+/* Footer */
+
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #08664F;
+    padding: 60px 20%;
+}
+
+footer>div>a{
+    color:#fff;
+    transition: 0.5s;
+    margin: 0 15px;
+}
+footer>div>a:hover{
+    color:#0DBC91;
+    transition: 0.5s;
+}
+
+.footer_soc>a{
+    margin: 0 5px !important;
+}
+
